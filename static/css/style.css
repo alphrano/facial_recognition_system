@@ -1,0 +1,68 @@
+:root {
+    --primary: #6F00FF;
+    --secondary: #00008B;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, var(--primary) 50%, var(--secondary) 50%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center Login Box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.gradient-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 400px;
+    text-align: center;
+}
+
+/* Input Fields */
+.gradient-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.gradient-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6F00FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.gradient-card button:hover {
+    background-color: #4B0082;
+}
+
+/* Face Scan Button */
+.face-scan-btn {
+    margin-top: 10px;
+    background-color: #00008B;
+}
+
+.face-scan-btn:hover {
+    background-color: #000066;
+}

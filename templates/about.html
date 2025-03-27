@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="gradient-nav">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Cookout Logo" class="logo">
+            <h1>Cookout Inc.</h1>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/login">Login</a>
+            <a href="/signup" class="cta-button">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p>We've advanced beyond incremental efficiencies to bring security to the core of everything that matters most to your enterprise.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+opencv-python==4.9.0.80
+deepface==0.0.89
+pycryptodome==3.20.0
+mysql-connector-python==8.3.0
+numpy==1.26.4
+tensorflow==2.15.0  # More stable for DeepFace
+flask==3.0.0  # Downgrade to 2.2.5 if issues occur
+flask-sqlalchemy==3.1.1
+python-dotenv==1.0.1  # Added for loading .env
+pandas==2.2.1  # Needed for DeepFace
+tqdm==4.66.2  # DeepFace dependency
+keras==2.16.0  # Needed separately sometimes

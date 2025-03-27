@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="gradient-nav">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Cookout Logo" class="logo">
+            <h1>Cookout Inc.</h1>
+        </div>
+        <div class="nav-links">
+            <a href="/logout" class="cta-button">Logout</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Audit Logs</a></li>
+                <li><a href="#">User Activity</a></li>
+                <li><a href="#">Device Management</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Live Camera Feed</h2>
+            <img src="{{ url_for('video_feed') }}" alt="Live Feed">
+        </div>
+    </div>
+</body>
+</html>
